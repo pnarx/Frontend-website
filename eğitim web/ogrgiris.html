@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim AKADEMİ | Öğrenci Giriş</title>
+
+    <link rel="stylesheet" href="/eğitim web/css/style-starter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+  
+  <header id="site-header" class="fixed-top" style="background-color: rgb(2, 2, 46);">
+    <div class="container ">
+        <nav class="navbar navbar-expand-lg ">
+            <h1><a class="navbar-brand" href="index.html">
+                <span class="w3yellow  text-capitalize">Eğitim</span> <span class="text-light">AKADEMİ</span>
+              </a></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mx-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" role="button" data-toggle="dropdown" data-target="#kurumsalDropdown" aria-expanded="false">
+                        Kurumsal
+                      </a>
+                      <div class="dropdown-menu" id="kurumsalDropdown">
+                        <a class="dropdown-item" href="hakkımızda.html">Hakkımızda</a>
+                        <a class="dropdown-item" href="yayınlar.html">Yayınlar</a>
+                        <a class="dropdown-item" href="kadro.html"> Kadro</a>
+
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="önkayit.html ">Ön Kayıt</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" role="button" data-toggle="dropdown" data-target="#duyuruDropdown" aria-expanded="false">
+                        Duyuru ve Haberler
+                      </a>
+                      <div class="dropdown-menu" id="duyuruDropdown">
+                        <a class="dropdown-item" href="csaati.html">Çalışma Saatleri</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" role="button" data-toggle="dropdown" data-target="#kursDropdown" aria-expanded="false">
+                        Hazırlık Kurslarımız
+                      </a>
+                      <div class="dropdown-menu" id="kursDropdown">
+                        <a class="dropdown-item" href="lisehzr.html">Lise Sınavlarına Hazırlık</a>
+                        <a class="dropdown-item" href="ünihzrlk.html">Üniversite Sınavlarına Hazırlık</a
+                      </div>
+                    </li>
+                    
+                  </ul>
+
+              <ul class="header-search me-lg-4">
+          <li class="nav-item search-right">
+            <a href="#search" class="btn search-btn btn-primary" title="search"><span class="fas fa-search me-2" aria-hidden="true"></span> Ara</a>
+            <!-- arama ekranı -->
+            <div id="search" class="pop-overlay">
+              <div class="popup">
+                <h3 class="title-w3l two mb-4 text-left">Burda Ara</h3>
+                <form action="#" method="GET" class="search-box d-flex position-relative">
+                  <input type="search" placeholder="Kelime" name="search" required="required" autofocus="">
+                  <button type="submit" class="btn"><span class="fas fa-search" aria-hidden="true"></span></button>
+                </form>
+              </div>
+              <a class="close" href="#close">×</a>
+            </div>
+            
+          </li>
+        </ul>
+            </div>
+          </nav>
+    </div>
+  </header>
+  
+
+    
+    <section class="w3l-main-slider banner-slider" id="ogrgiris" >
+        <div class="owl-one owl-carousel owl-theme">
+            <div class="slider-info banner-view banner-top1" style="background-image: url('/eğitim web/images/banner2.jpg');">
+                <div class="container mt-5">      
+                    <div class="row mt-5">
+                        <div class="col mt-5 ">
+                            <h4  style="color: aliceblue;">Giriş Yap</h4> <br>
+                            <div class="card rounded-oval  " style="border-radius: 8px; width: 450px;">
+                               
+                                <div class="card-body ">  
+                                    <form  class="shadow p-1 mb-1 bg-white rounded ">
+                                      <div >
+                                      <label for="username" class="form-label">TC Kimlik No</label>
+                                      <input type="text" class="form-control" id="username" placeholder="Kullanıcı adınızı girin">
+                                      </div>
+                                      <div>
+                                      <label for="password" class="form-label">Şifre</label>
+                                      <input type="password" class="form-control" id="password" placeholder="Şifrenizi girin">
+                                       </div>
+                                       <div >
+                                      <label for="captcha" class="form-label">Toplama İşlemi</label>
+                                      <input type="number" class="form-control" id="captcha" placeholder="Toplama sonucunu girin">
+                                       </div> <br>
+                                         <button type="submit" class="btn btn-primary">Giriş Yap</button>
+                                 
+                                    </form>
+                               
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col mt-5 ">
+                            <h4  style="color: aliceblue;">Kayıt Ol</h4><br>
+
+                            <div class="card rounded-oval border border-dark bg-white " style="border-radius: 8px; ">
+                                <div class="card-body ">
+
+
+                                    <form class="shadow p-1 mb-1 bg-white rounded   ">
+                                        <div class="mb-2">
+                                            <label for="name" class="form-label">Öğrenci Adı</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Adınız">
+                                          </div>
+                                          <div class="mb-2">
+                                            <label for="username" class="form-label">Soyadı</label>
+                                            <input type="text" class="form-control" id="username" placeholder="Soyadınız">
+                                          </div>
+                                          <div class="mb-2">
+                                            <label for="indentity" class="form-label">TC Kimlik No</label>
+                                            <input type="text" class="form-control" id="indentity" placeholder="TC Kimlik No">
+                                          </div>
+                                          <div class="mb-2">
+                                            <label for="address" class="form-label">Adres</label>
+                                            <input type="text" class="form-control" id="address" placeholder="Kayıtlı adresinizi giriniz">
+                                          </div>
+                                          <div class="mb-2">
+                                            <label for="password" class="form-label">Şifre</label>
+                                            <input type="text" class="form-control" id="password" placeholder="Şifreniz">
+                                          </div>
+                                          <div class="mb-2 ">
+                                            <label for="inputState" class="mb-2">Eğitim Durum</label>
+                                            <select id="inputState" class="form-control">
+                                              <option selected>Seçenek..</option>
+                                              <option>7.Sınıf</option>
+                                              <option>8.Sınıf</option>
+                                              <option>11.Sınıf</option>
+                                              <option>12.Sınıf</option>
+                                              <option>Mezun</option>
+        
+        
+                                            </select>
+                                          </div>
+                                     
+                                       
+                                      
+                                            <div class="mb-2">
+                                               <input class="form-check-input" type="checkbox" id="gridCheck">
+                                              <label class="form-check-label" for="gridCheck">
+                                                Onaylıyorum
+                                              </label>
+                                            </div>
+                                        
+                                        <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+
+                                     </form>
+                       
+                                </div>                           
+                            </div>
+                         </div>
+                     </div>      
+                 </div>         
+            </div>
+        </div>
+
+    </section>
+ 
+    <script>
+        // Toplama işlemi için rastgele sayılar oluşturulur
+        var number1 = Math.floor(Math.random() * 10) + 1;
+        var number2 = Math.floor(Math.random() * 10) + 1;
+    
+        // Toplama işlemi ve sonucu ekranda gösterilir
+        var sum = number1 + number2;
+        var captchaText = number1 + " + " + number2 + " = ";
+        var captchaInput = document.getElementById("captcha");
+        captchaInput.placeholder = captchaText;
+    
+        // Formu göndermeden önce Captcha doğrulaması yapılır
+        var form = document.querySelector("form");
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+    
+          var captchaValue = parseInt(captchaInput.value);
+    
+          if (captchaValue === sum) {
+            // Captcha doğru ise form gönderilir
+            form.submit();
+          } else {
+            // Captcha yanlış ise hata mesajı gösterilir
+            alert("Lütfen doğru bir toplama sonucu girin!");
+          }
+        });
+      </script>
+    <script src="/eğitim web/css/bootstrap.min.css"></script>
+    <script src="/eğitim web/css/style-starter.css"></script>
+    <script src="/eğitim web/js/bootstrap.min.js>"></script>
+    <script src="/eğitim web/js/jquery-3.3.1.min.js"></script>
+    <script src="/eğitim web/js/theme-change.js"></script>
+    <script src="/eğitim web/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

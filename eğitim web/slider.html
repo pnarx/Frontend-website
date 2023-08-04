@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Card Slider</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+  <div class="slider-container">
+    <div class="card-slider">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+  
+  <script>
+
+
+const slider = document.querySelector(".card-slider");
+const cards = document.querySelectorAll(".card");
+const cardWidth = cards[0].offsetWidth;
+let currentIndex = 0;
+
+function showCard(index) {
+  slider.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+function nextCard() {
+  currentIndex = (currentIndex + 1) % cards.length;
+  showCard(currentIndex);
+}
+
+function prevCard() {
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  showCard(currentIndex);
+}
+
+setInterval(nextCard, 5000); // Automatically slide every 5 seconds
+
+  </script>
+</body>
+</html>
